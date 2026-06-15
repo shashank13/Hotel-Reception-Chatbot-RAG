@@ -42,7 +42,7 @@ def load_vectorstore():
         model_name="sentence-transformers/all-MiniLM-L6-v2"
     )
 
-    VECTOR_DB_PATH = "/content/drive/MyDrive/faiss_db"
+    VECTOR_DB_PATH = "faiss_db"
 
     db = FAISS.load_local(
         VECTOR_DB_PATH,
