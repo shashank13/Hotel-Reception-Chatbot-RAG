@@ -19,7 +19,7 @@ st.set_page_config(
     layout="wide"
 )
 
-st.title("📚 RAG Question Answering System")
+st.title("📚 Hotel-related Question Answering System")
 
 # ----------------------------------
 # LOAD EMBEDDINGS
@@ -137,7 +137,7 @@ st.markdown("""
 # ======================================
 
 st.markdown("""
-# 🤖 AI Document Assistant
+# 🤖 HotelGPT: AI Document Assistant
 
 Ask questions about your uploaded documents using RAG and Groq.
 
