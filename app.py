@@ -64,7 +64,7 @@ retriever = vector_db.as_retriever(
 
 llm = ChatOpenAI(
     model="llama-3.3-70b-versatile",
-    api_key=os.getenv("GROQ_API_KEY"),
+    api_key = st.secrets["GROQ_API_KEY"],
     base_url="https://api.groq.com/openai/v1"
 )
 
