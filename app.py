@@ -24,6 +24,16 @@ st.title("📚 RAG Question Answering System")
 # ----------------------------------
 # LOAD EMBEDDINGS
 # ----------------------------------
+import os
+
+print("Current Directory:", os.getcwd())
+print("Files:", os.listdir("."))
+
+if os.path.exists("faiss_db"):
+    print("FAISS folder exists")
+    print(os.listdir("faiss_db"))
+else:
+    print("FAISS folder NOT found")
 
 @st.cache_resource
 def load_vectorstore():
